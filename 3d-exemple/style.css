@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.abc{
+    background: url(jungle.jpg) no-repeat;
+    transform: perspective(400px) rotateY(-34deg);
+    perspective-origin: 25% 75%;
+    transform-style: preserve-3d;
+    width: 40%;
+/*    height: 400px;*/
+}
+.abc2{
+    background: url(jungle.jpg) no-repeat;
+    transform: perspective(600px) rotateX(34deg);
+    perspective-origin: 25% 75%;
+    transform-style: preserve-3d;
+    width: 40%;
+/*    height: 400px;*/
+}
+.abc3{
+    background: url(jungle.jpg) no-repeat;
+   /* transform: perspective(600px) rotateX(34deg);*/
+    perspective-origin: 25% 75%;
+    transform-style: preserve-3d;
+    width: 40%;
+/*    height: 400px;*/
+}
+/*
+.abc2{
+   color: aliceblue; 
+    padding: 10px;
+}*/

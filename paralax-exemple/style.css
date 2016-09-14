@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body{
+    height: 100%;
+}
+html{
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.slide{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.slide1{
+    background: url(1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: table;
+}
+.slide2{    
+    position: absolute;
+    content: "";
+    background: url(2.png);
+    background-size: cover;
+    transform: translateZ(-4px) scale(5);
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+.slide3{    
+    background: url(3.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.abc{
+   font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    bo
+}

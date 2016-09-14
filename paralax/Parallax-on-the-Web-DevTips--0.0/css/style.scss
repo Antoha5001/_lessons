@@ -1,0 +1,80 @@
+//@import url("normalize.css");
+//@import url("skeleton.css");
+//@import url("layout1.css");
+
+@import "normalize";
+@import "skeleton";
+@import "layout1";
+
+.bird-box{	
+	position:relative;
+	height: 600px;
+	background:{								image:url("../images/bird-bg.jpg");
+		size:auto 600px;
+		position:  top center;
+		attachment:fixed;
+		repeat:  no-repeat;
+	}
+    overflow: hidden;
+}
+
+.logo{
+	height: 100px;	
+	width: 100%;
+	background: {	
+        image:url("../images/black-bird-logo.svg");
+		position: center;
+        repeat:no-repeat;
+	}
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+}
+.fore-bird{
+    width: 960px;
+    height: 733px;
+    background:{            //color:transparentize(red,.3);		
+        image:url("../images/fore-bird.png");
+		repeat:  no-repeat;
+        position: bottom right;
+    }
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top:380px;
+}
+.back-bird{
+    width: 960px;
+    height: 298px;
+    background: {
+        image:url("../images/back-bird.png"); //color:transparentize(red,.3);
+		repeat:  no-repeat;
+        position: top left;
+    }
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    
+}
+
+//Model Grid
+
+.clothes-pics{
+	figure{
+		margin-bottom: 20px;
+		position: relative;
+			opacity: 0;
+		transition: all .5s ease-in-out;
+		transform: translateX(20px);
+		&.is-showing{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+}
+
+
+
+
+
+

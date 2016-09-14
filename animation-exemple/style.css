@@ -1,0 +1,13 @@
+.div{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background: url(http://vignette2.wikia.nocookie.net/moshi-monsters-mm/images/7/70/Smile%21.png/revision/latest?cb=20130612164606) no-repeat center center;
+    background-size: /*contain*/ 70%;;
+    transition: 1s transform;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+div:hover{
+    transform: rotateY(360deg) scale(2);
+}
