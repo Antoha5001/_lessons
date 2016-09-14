@@ -6,6 +6,7 @@
 @import "skeleton";
 @import "layout1";
 
+
 .bird-box{	
 	position:relative;
 	height: 600px;
@@ -72,7 +73,19 @@
 		}
 	}
 }
+//Large-window
 
+.large-window{
+	height: 640px;
+	background: {
+		image: url("../images/model1.jpg");
+		position: top center;
+		repeat:no-repeat;
+		attachment: fixed;
+	}
+		margin-top: 100px;
+	border-radius: 50%;
+}
 
 
 
