@@ -954,4 +954,42 @@ img {
   background-repeat: repeat-y;
   background-attachment: fixed;
   margin-top: 100px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: relative; }
+
+.window-tint {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.promo-text {
+  color: white;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 1.2; }
+  .promo-text strong {
+    display: block;
+    font-size: 30px; }
+  .promo-text span {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5); }
+
+.window-cta {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all .3s ease-in-out; }
+  .window-cta:hover {
+    background: white;
+    color: black; }
