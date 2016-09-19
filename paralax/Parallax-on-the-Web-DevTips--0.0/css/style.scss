@@ -6,9 +6,11 @@
 @import "skeleton";
 @import "layout1";
 
+
 .bird-box{	
 	position:relative;
 	height: 600px;
+	z-index: 3;
 	background:{								image:url("../images/bird-bg.jpg");
 		size:auto 600px;
 		position:  top center;
@@ -60,20 +62,144 @@
 //Model Grid
 
 .clothes-pics{
+	margin-bottom: 100px;
 	figure{
+		overflow: hidden;
 		margin-bottom: 20px;
 		position: relative;
-			opacity: 0;
+		opacity: 0;
 		transition: all .5s ease-in-out;
 		transform: translateX(20px);
+		cursor: pointer;
 		&.is-showing{
 			opacity: 1;
 			transform: translateX(0px);
 		}
+		img{
+			display: block;
+			transform: scale(1);
+		transition: all .5s ease-in-out;
+		}
+		&:hover{
+			figcaption{
+				left:0%;
+			}
+			img{
+			transform: scale(1.1);
+			}
+		}
+		
+	}
+	figcaption{
+		position: absolute;
+		bottom: 10px;
+		left: -100%;
+		background: black;
+		color: white;
+		padding: 2px 8px;
+		font-size: 11px;
+		transition: all .5s ease-in-out;
+	}
+}
+//Large-window
+
+.large-window{
+	height: 640px;
+	//overflow: hidden;
+	background: {
+		image: url("../images/model1.jpg");
+		position: center 0px;
+		repeat:repeat-y;
+		attachment: fixed;
+	}
+	margin:{
+		top: 100px;
+		bottom: 100px;
+	}
+	border-radius: 50%;
+	position: relative;
+}
+.window-tint{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.promo-text{
+	color: white;
+	font-weight: 100;
+	font-size: 50px;
+	line-height: 1.2;
+	strong{
+		display: block;
+		font-size: 30px;
+	}
+	span{
+		font:{
+			size:18px;
+			weight:300;
+			style:italic;
+		}
+		color: rgba(255,255,255,0.5);
+	}
+}
+.window-cta{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;
+	transition: all .3s ease-in-out;
+	&:hover{
+		background: white;
+		color: black;
 	}
 }
 
+//posts
 
+.blog-posts{
+	margin-top: 100px;
+}
+
+.post{
+	border: 1px solid #e1e1e1;
+	padding: 20px 20px 0;
+	background: white;
+	position: relative;
+}
+.post-1{
+	transform: translate(100px, 20px);
+}
+.post-2{
+	z-index: 2;
+}
+.post-3{
+	transform: translate(-100px, 20px);
+}
+
+//footer
+footer{
+	background: black;
+	color:white;
+	padding: 40px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	.footer-stuff{
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	a{
+		color:white;
+	}
+}
 
 
 

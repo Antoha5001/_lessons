@@ -8,13 +8,16 @@ h1 {
 figure {
   margin: auto; }
 
-.content article {
+.content {
+	position: relative;
+	article {
   padding: 100px 0;
   max-width: 640px;
   margin: 0 auto;
   text-align: center; }
+	
+}
+
 
 img {
   max-width: 100%; }
-
-/*# sourceMappingURL=layout1.css.map */
