@@ -10,6 +10,7 @@
 .bird-box{	
 	position:relative;
 	height: 600px;
+	z-index: 3;
 	background:{								image:url("../images/bird-bg.jpg");
 		size:auto 600px;
 		position:  top center;
@@ -181,6 +182,23 @@
 }
 .post-3{
 	transform: translate(-100px, 20px);
+}
+
+//footer
+footer{
+	background: black;
+	color:white;
+	padding: 40px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	.footer-stuff{
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	a{
+		color:white;
+	}
 }
 
 
