@@ -1,0 +1,28 @@
+body{
+	padding: 50px;
+	color: rgba(0,0,0,0.7);
+}
+.box{
+	display: inline-block;
+	background: pink;
+	width: 200px;
+	height: 200px;
+	transition: transform .3s ease-in-out;		
+	transform: translate(200px, 150px) rotate(18deg);
+}
+
+.trigger{
+	display: inline-block;
+	padding: 20px;
+	width: 200px;
+	height: 200px;
+	background: gray;
+
+}
+
+
+
+
+
+
+
